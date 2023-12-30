@@ -10,7 +10,6 @@ This is my Electronic Engineering Bachelor Degree project.
 2. [The code](#code)
 	1. [Quadtree and Barnes-Hut algorithm](#quadtree_barnes-hut)
 	2. [Operations count](#operations_count)
-3. [Riferimenti](#riferimenti)
 
 <a name = "summary"></a>
 ## Summary
