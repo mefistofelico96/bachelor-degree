@@ -41,4 +41,4 @@ This part shows how the quadtree and the Barnes-Hut algorithm work. To run this 
 
 <a name = "operations_count"></a>
 ### Operations count
-This part compares the Barnes-Hut complexity with the exact method complexity. To run this part, open the `OpCount_main.m` file on MATLAB and run it.
+This part compares the Barnes-Hut complexity with the exact method complexity. To run this part, open the `opCount_main.m` file on MATLAB and run it.
