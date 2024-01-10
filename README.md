@@ -1,8 +1,6 @@
 # bachelor-degree
 This is my Electronic Engineering Bachelor Degree project.
 
-***
-
 # Data structure for bodies interactions
 
 ## Index
