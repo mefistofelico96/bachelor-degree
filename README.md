@@ -1,23 +1,23 @@
-# bachelor-degree
+# progetto-triennale
 This is my Electronic Engineering Bachelor Degree thesis project.
 
-# Data structure for bodies interactions
-## Summary
-The $n$-body problem is a class of problems still continuously studied in the field of mathematical physics, but which has multiple possible applications ranging from celestial mechanics to applied engineering. These problems look at the possible interaction that occurs between a number of bodies greater than two, which makes the modeling and formulation of the laws that govern such processes quite complex. Analytically, solving such problems means setting up $n$ systems of various differential equations, to which initial conditions must be assigned. Computationally, this methodology is very expensive to address numerically. This is why simplified numerically models are used, i.e. those which considerably reduce the number of operations to be carried out, in order to reduce computational complexity and, possibly, calculation times.
+# Strutture dati per le interazioni tra i corpi
+## Sommario
+Il problema degli $n$-corpi è una classe di problemi ancora continuamente studiati nel campo della fisica matematica, ma che ha molteplici possibili applicazioni che vanno dalla meccanica celeste all’ingegneria applicata. Questi problemi riguardano la possibile interazione che avviene tra un numero di corpi maggiore di due, il che rende piuttosto complessa la modellazione e la formulazione delle leggi che governano tali processi. Analiticamente, risolvere tali problemi significa costruire sistemi di varie equazioni differenziali, alle quali devono essere assegnate le condizioni iniziali. Dal punto di vista computazionale, questa metodologia è molto costosa da affrontare numericamente. Per questo motivo si utilizzano modelli numericamente semplificati, cioè che riducono notevolmente il numero di operazioni da svolgere, in modo da ridurre la complessità computazionale ed, eventualmente, i tempi di calcolo.
 
-This thesis work concerned the development of an algorithm for the efficient and effective solution of an $n$-body problem based on the Barnes-Hut approach. The problem considered consisted in the calculation of the electric force field established by a non-uniform network of charges all with the same sign.
+Questo lavoro di tesi ha riguardato lo sviluppo di un algoritmo per la soluzione efficiente ed efficace di un problema ad $n$-corpi basato sull'approccio Barnes-Hut. Il problema considerato consisteva nel calcolo del campo di forza elettrico stabilito da una rete non uniforme di cariche tutte dello stesso segno.
 
-Wanting to solve an $n$-body problem exactly numerically would have a computational cost equal to $O(n^2)$. The Barnes-Hut algorithm has the merit of reducing the computational complexity to a value proportional to $O(n \log{n})$ at the cost of a slight and controllable decrease in accuracy thanks to the parameter $\theta$.
+Volendo risolvere un problema di $n$-corpi in maniera esatta numericamente avrebbe un costo computazionale pari a $O(n^2)$. L'algoritmo di Barnes-Hut ha il merito di ridurre la complessità computazionale ad un valore proporzionale a $O(n \log{n})$ al costo di una leggera e controllabile diminuzione della precisione grazie al parametro $\theta$.
 
-The discussed approach was implemented in a code written in MATLAB language and the performances of the Barnes-Hut algorithm were compared with an exact calculation of the interactions between particles in terms of accuracy and computational cost.
+L'approccio discusso è stato implementato in un codice scritto in linguaggio MATLAB e le prestazioni dell'algoritmo Barnes-Hut sono state confrontate con un calcolo esatto delle interazioni tra particelle in termini di accuratezza e costo computazionale.
 
-## The code
-The code is divided in two parts:
-1. the quadtree and Barnes-Hut algorithm part;
-2. the operations count part.
+## Il codice
+Il codice è diviso in due parti:
+1. la parte che contiene il quadtree e l'algoritmo di Barnes-Hut;
+2. la parte che conta le operazioni da eseguire per calcolare la forza totale su ogni particella.
 
-### Quadtree and Barnes-Hut algorithm
-This part shows how the quadtree and the Barnes-Hut algorithm work. To run this part, open the `quadtree_main.m` file on MATLAB and run it.
+### Il quadtree e l'algoritmo di Barnes-Hut
+Questa parte mostra come funzionano il quadtree e l'algoritmo di Barnes-Hut. Per eseguire questa parte, aprire il file `quadtree_main.m` su MATLAB ed eseguirlo.
 
-### Operations count
-This part compares the Barnes-Hut complexity with the exact method complexity. To run this part, open the `opCount_main.m` file on MATLAB and run it.
+### Il numero di interazioni
+Questa parte confronta la complessità computazionale dell'algoritmo di Barnes-Hut con il calcolo esatto delle forze su ogni particella. Per eseguire questa parte, aprire il file `opCount_main.m` su MATLAB ed eseguirlo.
