@@ -1,5 +1,5 @@
 # progetto-triennale
-This is my Electronic Engineering Bachelor Degree thesis project.
+Progetto della mia tesi triennale.
 
 # Strutture dati per le interazioni tra i corpi
 ## Sommario
