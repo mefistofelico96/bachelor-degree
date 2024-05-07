@@ -1,5 +1,5 @@
 # progetto-triennale
-Progetto della mia tesi triennale.
+Progetto di tesi triennale.
 
 # Strutture dati per le interazioni tra i corpi
 ## Sommario
