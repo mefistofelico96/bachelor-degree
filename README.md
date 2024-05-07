@@ -1,4 +1,4 @@
-# progetto-triennale
+# tesi-triennale
 Progetto della mia tesi triennale.
 
 # Strutture dati per le interazioni tra i corpi
