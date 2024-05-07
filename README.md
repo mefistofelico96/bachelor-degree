@@ -20,4 +20,4 @@ Il codice è diviso in due parti:
 Questa parte mostra come funzionano il quadtree e l'algoritmo di Barnes-Hut. Per eseguire questa parte, aprire il file `quadtree_main.m` su MATLAB ed eseguirlo.
 
 ### Il numero di interazioni
-Questa parte confronta la complessità computazionale dell'algoritmo di Barnes-Hut con il calcolo esatto delle forze su ogni particella. Per eseguire questa parte, aprire il file `opCount_main.m` su MATLAB ed eseguirlo.
+Questa parte confronta la complessità computazionale dell'algoritmo di Barnes-Hut con quella che esegue il calcolo esatto delle forze su ogni particella. Per eseguire questa parte, aprire il file `opCount_main.m` su MATLAB ed eseguirlo.
