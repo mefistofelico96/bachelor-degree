@@ -1,5 +1,5 @@
-# tesi-triennale
-Progetto della mia tesi triennale.
+# bachelor-degree
+My Bachelor Degree thesis project.
 
 # Strutture dati per le interazioni tra i corpi
 ## Sommario
