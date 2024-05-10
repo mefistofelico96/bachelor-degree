@@ -1,5 +1,5 @@
 % Quadtree function for operation count
-function tree = opCount_quadtree(L, H, center_x, center_y, N, N_max, particle_position, particle_charge, tree)
+function tree = quadtree_opCount(L, H, center_x, center_y, N, N_max, particle_position, particle_charge, tree)
     % plot(center_x, center_y, 'or');
 
     % South - West
@@ -25,7 +25,7 @@ function tree = opCount_quadtree(L, H, center_x, center_y, N, N_max, particle_po
             % I set it as a not leaf node
             tree.sw.isLeaf = false;
             % Recoursive call of quadtree
-            [tree.sw] = opCount_quadtree(L/2, H/2, center_x - L/4, center_y - H/4, N, N_max, particle_position, particle_charge, tree.sw);
+            [tree.sw] = quadtree_opCount(L/2, H/2, center_x - L/4, center_y - H/4, N, N_max, particle_position, particle_charge, tree.sw);
         else
             % If not, it is a leaf node
             tree.sw.isLeaf = true;
@@ -51,7 +51,7 @@ function tree = opCount_quadtree(L, H, center_x, center_y, N, N_max, particle_po
         tree.se.L_node = L/2;
         if (n_se > N_max)
             tree.se.isLeaf = false;
-            [tree.se] = opCount_quadtree(L/2, H/2, center_x + L/4, center_y - H/4, N, N_max, particle_position, particle_charge, tree.se);
+            [tree.se] = quadtree_opCount(L/2, H/2, center_x + L/4, center_y - H/4, N, N_max, particle_position, particle_charge, tree.se);
         else
             tree.se.isLeaf = true;
         end
@@ -76,7 +76,7 @@ function tree = opCount_quadtree(L, H, center_x, center_y, N, N_max, particle_po
         tree.nw.L_node = L/2;
         if (n_nw > N_max)
             tree.nw.isLeaf = false;
-            [tree.nw] = opCount_quadtree(L/2, H/2, center_x - L/4, center_y + H/4, N, N_max, particle_position, particle_charge, tree.nw);
+            [tree.nw] = quadtree_opCount(L/2, H/2, center_x - L/4, center_y + H/4, N, N_max, particle_position, particle_charge, tree.nw);
         else
             tree.nw.isLeaf = true;
         end
@@ -100,7 +100,7 @@ function tree = opCount_quadtree(L, H, center_x, center_y, N, N_max, particle_po
         tree.ne.L_node = L/2;
         if (n_ne > N_max)
             tree.ne.isLeaf = false;
-            [tree.ne] = opCount_quadtree(L/2, H/2, center_x + L/4, center_y + H/4, N, N_max, particle_position, particle_charge, tree.ne);
+            [tree.ne] = quadtree_opCount(L/2, H/2, center_x + L/4, center_y + H/4, N, N_max, particle_position, particle_charge, tree.ne);
         else
             tree.ne.isLeaf = true;
         end
