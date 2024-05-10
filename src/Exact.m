@@ -4,7 +4,7 @@ close all;
 
 %% Data
 % Get data from Data.txt file
-in_path = "Data.txt";
+in_path = "src/Data.txt";
 fileID = fopen(in_path, "r");
 data = fscanf(fileID, "%f");
 N = data(1); % Number of particles
@@ -28,6 +28,6 @@ for i = 1:size(particle_position, 2)
     end
 end
 
-out_path = "Exact.mat";
+out_path = "src/Exact.mat";
 save(out_path, "force_exact");
 clear r i j in_path out_path;
