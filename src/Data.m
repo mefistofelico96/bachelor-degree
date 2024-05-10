@@ -20,7 +20,7 @@ particle_position(2, 1:N) = H*rand(1, N);
 particle_charge(1:N) = (ceil(10*rand(1, N)) - 5); % From -4 to 5 (1.602e-19*)
 
 %% Write on Data.txt file
-path = "Data.txt";
+path = "src/Data.txt";
 fileID = fopen(path, 'w');
 fprintf(fileID, '%f\n', N);
 fprintf(fileID, '%f\n', particle_position(1, 1:N));
