@@ -9,7 +9,7 @@ clear;
 
 %% Data
 % Get data from Data.txt file
-path = "Data.txt";
+path = "src/Data.txt";
 fileID = fopen(path, 'r');
 data = fscanf(fileID, '%f');
 N = data(1); % Number of particles
@@ -103,7 +103,7 @@ end
 clear center i j k;
 
 % Import exact data
-data_exact = load('Exact.mat');
+data_exact = load('src/Exact.mat');
 
 % Prepare to plot the tree node
 parent_pointer = [];
@@ -130,6 +130,27 @@ grid on;
 plot(data_exact.force_exact(2, 1:end), 'r');
 plot(particle_f(2, 1:end), 'b');
 legend("Esatto", "Approssimato");
+
+% figure("Name", "Quadtree");
+% subplot(2, 1, 1);
+% title('Componente x della forza su ogni particella');
+% xlabel('Particella');
+% ylabel('$F_x$', 'Interpreter', 'latex');
+% hold on;
+% grid on;
+% plot(data_exact.force_exact(1, 1:end), 'r');
+% plot(particle_f(1, 1:end), 'b');
+% legend("Esatto", "Approssimato");
+% 
+% subplot(2, 1, 2);
+% title('Componente y della forza su ogni particella');
+% xlabel('Particella');
+% ylabel('$F_y$', 'Interpreter', 'latex');
+% hold on;
+% grid on;
+% plot(data_exact.force_exact(2, 1:end), 'r');
+% plot(particle_f(2, 1:end), 'b');
+% legend("Esatto", "Approssimato");
 
 % Plot tree
 figure("Name", "Quadtree");
