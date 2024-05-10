@@ -107,7 +107,7 @@ data_exact = load('Exact.mat');
 
 % Prepare to plot the tree node
 parent_pointer = [];
-parent_pointer = get_parents(tree.sw, parent_pointer);
+parent_pointer = getParents(tree.sw, parent_pointer);
 
 %% Plots
 % Force components
