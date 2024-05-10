@@ -40,7 +40,7 @@ for k = 1:n_loop
     
     % Approx case
     tree = struct('sw', [], 'se', [], 'nw', [], 'ne', [], 'cc_plus_node', [], 'cc_minus_node', [], 'q_plus_node', [], 'q_minus_node', [], 'L_node', [], 'particle_q_node', [], 'particle_position_node', [], 'isEmpty', [], 'isLeaf', [], 'index', 0);
-    tree = opCount_quadtree(2*L, 2*H, center(1), center(2), N, N_max, particle_position, particle_charge, tree);
+    tree = quadtree_opCount(2*L, 2*H, center(1), center(2), N, N_max, particle_position, particle_charge, tree);
     particle_f = zeros(2, N);
     for i = 1:N
         cc_plus_force = [];
